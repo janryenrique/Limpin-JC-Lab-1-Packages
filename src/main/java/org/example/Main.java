@@ -1,12 +1,17 @@
 package org.example;
 
+import org.example.packageone.ClassOne;
+import org.example.packagetwo.ClassTwo;
+import org.example.packagethree.ClassThree;
 
-// Import here manually
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        ClassOne objOne = new ClassOne();
+        ClassTwo objTwo = new ClassTwo();
+        ClassThree objThree = new ClassThree();
 
-
+        System.out.println(objOne.greet());
+        System.out.println(objTwo.greet());
+        System.out.println(objThree.greet());
     }
 }
